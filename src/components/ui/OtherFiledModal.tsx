@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Button } from "./Button";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion, AnimatePresence, type Variants } from "framer-motion";
 
 interface OtherFieldModalProps {
   isOpen: boolean;

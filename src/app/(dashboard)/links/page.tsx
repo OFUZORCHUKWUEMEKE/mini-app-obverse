@@ -1,6 +1,6 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { motion, type Variants } from "framer-motion";
 import { catIcon, spotify } from "@/assets/icons";
 import Image from "next/image";
 import Link from "next/link";

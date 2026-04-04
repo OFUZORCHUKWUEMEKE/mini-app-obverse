@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import OtherFieldModal from "./ui/OtherFiledModal";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion, AnimatePresence, type Variants } from "framer-motion";
 
 interface CreateModalProps {
   isOpen: boolean;

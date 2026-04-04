@@ -1,6 +1,6 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { motion, type Variants } from "framer-motion";
 import { TransactionDetails } from "@/constants";
 import Image from "next/image";
 import Link from "next/link";
@@ -23,7 +23,7 @@ const cardVariants = {
   visible: {
     opacity: 1,
     y: 0,
-    transition: { type: "spring", stiffness: 400, damping: 28 },
+    transition: { type: "spring" as const, stiffness: 400, damping: 28 },
   },
 };
 

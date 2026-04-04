@@ -30,7 +30,7 @@ const itemVariants = {
   visible: {
     opacity: 1,
     y: 0,
-    transition: { type: "spring", stiffness: 400, damping: 25 },
+    transition: { type: "spring" as const, stiffness: 400, damping: 25 },
   },
 };
 
@@ -167,7 +167,7 @@ const page = () => {
                   initial={{ opacity: 0, height: 0, y: -10 }}
                   animate={{ opacity: 1, height: "auto", y: 0 }}
                   exit={{ opacity: 0, height: 0, y: -10, transition: { duration: 0.2 } }}
-                  transition={{ type: "spring", bounce: 0, duration: 0.4 }}
+                  transition={{ type: "spring" as const, bounce: 0, duration: 0.4 }}
                   className="flex flex-col gap-1.5 w-full"
                 >
                   <div className="flex justify-between items-center ml-1">

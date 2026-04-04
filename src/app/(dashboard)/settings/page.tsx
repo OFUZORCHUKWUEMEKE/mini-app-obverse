@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { motion } from "framer-motion";
+import { motion, type Variants } from "framer-motion";
 import { useFarcaster } from "@/providers/FarcasterProvider";
 import Image from "next/image";
 import { Button } from "@/components/ui/Button";
@@ -28,7 +28,7 @@ const cardVariants = {
     visible: {
         opacity: 1,
         y: 0,
-        transition: { type: "spring", stiffness: 400, damping: 28 },
+        transition: { type: "spring" as const, stiffness: 400, damping: 28 },
     },
 };
 
@@ -78,7 +78,7 @@ export default function SettingsPage() {
                             <motion.div
                                 initial={{ scale: 0 }}
                                 animate={{ scale: 1 }}
-                                transition={{ type: "spring", stiffness: 400, damping: 15, delay: 0.2 }}
+                                transition={{ type: "spring" as const, stiffness: 400, damping: 15, delay: 0.2 }}
                                 className="w-12 h-12 rounded-full flex-shrink-0 overflow-hidden"
                             >
                                 {user?.pfpUrl ? (
