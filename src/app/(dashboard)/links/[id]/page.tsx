@@ -1,22 +1,22 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { motion, type Variants } from "framer-motion";
 import { PaymentLinksDetails, TransactionDetails } from "@/constants";
 import { IoChevronBack, IoCopyOutline, IoShareSocialOutline, IoSearch } from "react-icons/io5";
 import Image from "next/image";
 import Link from "next/link";
-import { useState, useMemo, useEffect } from "react";
+import { useState, useMemo } from "react";
 import { toast } from "sonner";
 import { QRCodeSVG } from "qrcode.react";
 
-const pageVariants = {
+const pageVariants: Variants = {
     hidden: { opacity: 0, scale: 0.98 },
     visible: {
         opacity: 1,
         scale: 1,
         transition: {
             duration: 0.4,
-            ease: "easeOut",
+            ease: "easeOut" as const,
             staggerChildren: 0.1
         }
     }
