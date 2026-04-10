@@ -1,8 +1,8 @@
 {
   "accountAssociation": {
     "header": "eyJmaWQiOjExMTAyOTUsInR5cGUiOiJhdXRoIiwia2V5IjoiMHhmNjVCYTQ5MEU2NmJBZmMwYWI0OTUyRDg3YjdjMUNEMGI5RjNGNzAwIn0",
-    "payload": "eyJkb21haW4iOiJtaW5pLWFwcC1vYnZlcnNlLWY3aW4udmVyY2VsLmFwcCJ9",
-    "signature": "bi8apsdPJdiD/kZ1hIcdi5MyaBVKTfBr9eA14/H6hGcM046zp1eL48It+ZWUR0p8VyMdPs2YsZaVzg1yi+Vh2Rw="
+    "payload": "eyJkb21haW4iOiJtaW5pLWFwcC1vYnZlcnNlLnZlcmNlbC5hcHAifQ",
+    "signature": "gadYIpfJ3TOMt5Dd0jDjYyRWRBD9CCzj8aTAdwtRqGcw5CaDC1+W3VelyhmicKZH6IZd85bk4lJWXcBtOCbp4Rw="
   },
   "miniapp": {
     "version": "1",
@@ -11,8 +11,8 @@
     "iconUrl": "https://mini-app-obverse.vercel.app/icon.png",
     "splashImageUrl": "https://mini-app-obverse.vercel.app/logotextdark.svg",
     "splashBackgroundColor": "#141414",
-    "webhookUrl": "https://mini-app-obverse.vercel.app/api/webhook",
-    "subtitle": "Stablecoin payments, simplified",
+    "webhookUrl": "",
+    "subtitle": "Onchain stablecoin payments",
     "description": "Create payment links, receive stablecoins, and track invoices — all from within your social feed.",
     "primaryCategory": "finance",
     "tags": [

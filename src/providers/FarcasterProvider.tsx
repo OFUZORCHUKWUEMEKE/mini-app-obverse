@@ -39,6 +39,10 @@ export function FarcasterProvider({ children }: { children: React.ReactNode }) {
     async function init() {
       try {
         const { sdk } = await import("@farcaster/miniapp-sdk");
+
+        // Call ready() immediately so the splash screen is dismissed
+        await sdk.actions.ready();
+
         const context = await sdk.context;
 
         if (context?.user) {
@@ -50,8 +54,6 @@ export function FarcasterProvider({ children }: { children: React.ReactNode }) {
             pfpUrl: context.user.pfpUrl,
           });
         }
-
-        await sdk.actions.ready();
       } catch {
         // Not running inside Farcaster client — regular browser
       } finally {
