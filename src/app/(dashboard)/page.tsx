@@ -1,7 +1,7 @@
 "use client";
 import { useState } from "react";
 import { useFarcaster } from "@/providers/FarcasterProvider";
-import { motion, type Variants } from "framer-motion";
+import { motion } from "framer-motion";
 
 import {
   arrowDown2,
@@ -53,7 +53,7 @@ export default function HomePage() {
   const { user } = useFarcaster();
   const displayName = user?.displayName ?? user?.username ?? "there";
 
-  const chains = ["All-Chains", "Solana", "Base", "Arbitrum", "BNB"];
+  const chains = ["All-Chains", "Solana", "Base", "Arbitrum", "BNB", "Monad"];
   const durations = [
     "All-Time",
     "This Week",

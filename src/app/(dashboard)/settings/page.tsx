@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { motion, type Variants } from "framer-motion";
+import { motion } from "framer-motion";
 import { useFarcaster } from "@/providers/FarcasterProvider";
 import Image from "next/image";
 import { Button } from "@/components/ui/Button";
@@ -33,7 +33,7 @@ const cardVariants = {
 };
 
 export default function SettingsPage() {
-    const chains = ["Solana", "Base", "Arbitrum", "BNB"];
+    const chains = ["Solana", "Base", "Arbitrum", "BNB", "Monad"];
     const stablecoins = ["USDT", "USDC"];
 
     const { user } = useFarcaster();

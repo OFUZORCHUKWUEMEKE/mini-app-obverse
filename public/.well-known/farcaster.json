@@ -22,7 +22,8 @@
       "base"
     ],
     "requiredChains": [
-      "eip155:8453"
+      "eip155:8453",
+      "eip155:143"
     ],
     "noindex": false
   }
