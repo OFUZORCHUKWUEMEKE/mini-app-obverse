@@ -11,7 +11,6 @@
     "iconUrl": "https://mini-app-obverse.vercel.app/icon.png",
     "splashImageUrl": "https://mini-app-obverse.vercel.app/logotextdark.svg",
     "splashBackgroundColor": "#141414",
-    "webhookUrl": "",
     "subtitle": "Onchain stablecoin payments",
     "description": "Create payment links, receive stablecoins, and track invoices — all from within your social feed.",
     "primaryCategory": "finance",
