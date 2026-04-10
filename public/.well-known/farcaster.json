@@ -23,7 +23,7 @@
     ],
     "requiredChains": [
       "eip155:8453",
-      "eip155:143"
+      "eip155:10143"
     ],
     "noindex": false
   }
